@@ -1,0 +1,73 @@
+{
+  "database": "indian_law_db",
+  "collections": {
+    "ipc": {
+      "name": "Indian Penal Code",
+      "sample": {
+        "chapter": 1,
+        "chapter_title": "introduction",
+        "Section": 1,
+        "section_title": "Title and extent of operation of the Code",
+        "section_desc": "This Act shall be called the Indian Penal Code, and shall extend to the whole of India except the State of Jammu and Kashmir."
+      }
+    },
+    "crpc": {
+      "name": "Code of Criminal Procedure",
+      "sample": {
+        "chapter": 1,
+        "section": 1,
+        "section_title": "Short title, extent and commencement",
+        "section_desc": "This Act may be called the Code of Criminal Procedure, 1973..."
+      }
+    },
+    "cpc": {
+      "name": "Code of Civil Procedure",
+      "sample": {
+        "section": 1,
+        "title": "Short title, commencement and extent",
+        "description": "(1)This Act may be cited as the Code of Civil Procedure,1908..."
+      }
+    },
+    "hma": {
+      "name": "Hindu Marriage Act",
+      "note": "Document structured as comma-separated fields in a single key",
+      "sample": {
+        "chapter,section,section_title,section_desc": "1,1,Short title and extent,\"This Act may be called the Hindu Marriage Act, 1955."
+      }
+    },
+    "iea": {
+      "name": "Indian Evidence Act",
+      "sample": {
+        "chapter": 1,
+        "section": 1,
+        "section_title": "Short title, extent and Commencement",
+        "section_desc": "This Act may be called the Indian Evidence Act, 1872..."
+      }
+    },
+    "nia": {
+      "name": "Negotiable Instruments Act",
+      "sample": {
+        "chapter": 1,
+        "section": 1,
+        "section_title": "Short title, extent and Commencement",
+        "section_desc": "This Act may be called the Negotiable Instruments Act, 1881..."
+      }
+    },
+    "ida": {
+      "name": "Indian Divorce Act",
+      "sample": {
+        "section": 1,
+        "title": "Short title",
+        "description": "This Act may be called the 1*** Divorce Act, and shall come into operation on the first day of April, 1869."
+      }
+    },
+    "mva": {
+      "name": "Motor Vehicles Act",
+      "sample": {
+        "section": 1,
+        "title": "Short title, extent and commencement",
+        "description": "(1) This Act may be called the Motor Vehicles Act, 1988..."
+      }
+    }
+  }
+}
