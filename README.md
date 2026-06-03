@@ -71,8 +71,8 @@ npm install
 Create a file named `.env` in the `backend/` folder and specify the following variables:
 ```env
 PORT=5000
-MONGODB_URI=mongodb://Himmat:Himmat09012007@ac-b9bhjxm-shard-00-00.frff69a.mongodb.net:27017,ac-b9bhjxm-shard-00-01.frff69a.mongodb.net:27017,ac-b9bhjxm-shard-00-02.frff69a.mongodb.net:27017/indian_law_db?ssl=true&replicaSet=atlas-ii8vhh-shard-0&authSource=admin&appName=Cluster0
-JWT_SECRET=indian_law_penal_code_secret_key_2026_himmat_mundhe
+MONGODB_URI=mongodb://<username>:<password>@ac-b9bhjxm-shard-00-00.frff69a.mongodb.net:27017,ac-b9bhjxm-shard-00-01.frff69a.mongodb.net:27017,ac-b9bhjxm-shard-00-02.frff69a.mongodb.net:27017/indian_law_db?ssl=true&replicaSet=atlas-ii8vhh-shard-0&authSource=admin&appName=Cluster0
+JWT_SECRET=your_jwt_secret_key_here
 JWT_EXPIRES_IN=7d
 NODE_ENV=development
 
