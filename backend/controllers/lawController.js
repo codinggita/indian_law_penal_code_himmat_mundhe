@@ -3,8 +3,12 @@ const lawService = require('../services/lawService');
 class LawController {
   // GET /api/v1/laws
   getAllLaws = async (req, res) => {
-    const { act = 'ipc', page, limit, sort, isArchived } = req.query;
-    const result = await lawService.getAllLaws({ act, page, limit, sort, isArchived });
+    // Extract explicitly known pagination/sorting fields, then capture the rest as generic filters
+    const { act = 'ipc', page, limit, sort, isArchived, ...filters } = req.query;
+    
+    // Pass the extracted dynamic filters down to the service layer
+    const result = await lawService.getAllLaws({ act, page, limit, sort, isArchived, filters });
+    
     res.status(200).json({
       success: true,
       message: `Retrieved ${act.toUpperCase()} law records successfully.`,
@@ -180,3 +184,5 @@ class LawController {
 }
 
 module.exports = new LawController();
+
+
